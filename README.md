@@ -32,6 +32,6 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120
 
 Follow-up: what if you can't use division?
 
-[Solution](src/main/java/io/codingproblem/Problem1Variant.java)
+[Solution](src/main/java/io/codingproblem/Problem2.java) & [Tests](src/test/java/io/codingproblem/Problem2Test.java)
 
 ---
