@@ -2,23 +2,24 @@ package io.codingproblem;
 
 import java.util.*;
 
-/*
- Given the root to a binary tree, implement serialize(root), which serializes the tree into a string, and deserialize(s), which deserializes the string back into the tree.
-<br/><br/>
-For example, given the following Node class
-<br/><br/>
-<pre>
-    class Node:
-        def __init__(self, val, left=None, right=None):
-            self.val = val
-            self.left = left
-            self.right = right
- </pre>
-The following test should pass:
-<pre>
-    node = Node('root', Node('left', Node('left.left')), Node('right'))
-    assert deserialize(serialize(node)).left.left.val == 'left.left'
- </pre>
+/**
+ * Given the root to a binary tree, implement serialize(root), which serializes the tree into a string, and
+ * deserialize(s), which deserializes the string back into the tree.
+ * <br/><br/>
+ * For example, given the following Node class
+ * <br/><br/>
+ * <pre>
+ * class Node:
+ * def __init__(self, val, left=None, right=None):
+ * self.val = val
+ * self.left = left
+ * self.right = right
+ * </pre>
+ * The following test should pass:
+ * <pre>
+ * node = Node('root', Node('left', Node('left.left')), Node('right'))
+ * assert deserialize(serialize(node)).left.left.val == 'left.left'
+ * </pre>
  */
 public class Problem3 {
 
@@ -104,10 +105,10 @@ public class Problem3 {
 
         @Override
         public boolean equals(Object obj) {
-            if(obj == null) {
+            if (obj == null) {
                 return false;
             }
-            if(this == obj) {
+            if (this == obj) {
                 return true;
             }
             Node node = (Node) obj;
