@@ -1,7 +1,5 @@
 ## Daily Coding Problem
 
----
-
 ##### Problem 1
 
 Given a list of numbers and sum value, return whether any two numbers from the list add up to sum.
@@ -33,5 +31,26 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120
 Follow-up: what if you can't use division?
 
 [Solution](src/main/java/io/codingproblem/Problem2.java) & [Tests](src/test/java/io/codingproblem/Problem2Test.java)
+
+---
+
+##### Problem 3
+
+Given the root to a binary tree, implement serialize(root), which serializes the tree into a string, and deserialize(s), which deserializes the string back into the tree.
+
+For example, given the following Node class
+```
+class Node:
+   def __init__(self, val, left=None, right=None):
+       self.val = val
+       self.left = left
+       self.right = right
+```
+The following test should pass:
+```
+node = Node('root', Node('left', Node('left.left')), Node('right'))
+assert deserialize(serialize(node)).left.left.val == 'left.left'
+```
+[Solution](src/main/java/io/codingproblem/Problem3.java) & [Tests](src/test/java/io/codingproblem/Problem3Test.java)
 
 ---
